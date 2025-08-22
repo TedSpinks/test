@@ -1,4 +1,7 @@
-  build-image:
+name: Build and Push
+on: [push]
+jobs:
+  build-image:
     permissions:
       contents: read
       packages: write

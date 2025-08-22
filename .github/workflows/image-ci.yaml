@@ -21,6 +21,6 @@ jobs:
       - name: Build Docker image and push to GHCR
         uses: docker/build-push-action@v4
         with:
-          context: examples/tutorial
+          context: ./Dockerfile
           push: true
           tags: "ghcr.io/${{ env.REPO_LOWER_CASE }}:${{ env.SHA_SHORT }}"
